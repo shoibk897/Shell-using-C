@@ -9,13 +9,12 @@ char *read_line(void) {
             free(line);
             exit(EXIT_SUCCESS);
         } else {
+            perror("getline failed");
             free(line);
-            perror("Error while reading the line from stdin");
             exit(EXIT_FAILURE);
         }
     }
     return line;
 }
-
 
 

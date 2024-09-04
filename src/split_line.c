@@ -1,13 +1,13 @@
 #include "shell.h"
 
 char **split_line(char *line) {
-    int bufsize = 64;
-    int i = 0;
+    int bufsize = INITIAL_TOKENS_SIZE;
+    int position = 0;
     char **tokens = malloc(bufsize * sizeof(char *));
     char *token;
 
     if (!tokens) {
-        fprintf(stderr, "Allocation error in split_line: tokens\n");
+        perror("malloc failed");
         exit(EXIT_FAILURE);
     }
 
@@ -16,19 +16,19 @@ char **split_line(char *line) {
         if (token[0] == '#') {
             break;
         }
-        tokens[i] = token;
-        i++;
-        if (i >= bufsize) {
-            bufsize += bufsize;
+        tokens[position++] = token;
+        if (position >= bufsize) {
+            bufsize += INITIAL_TOKENS_SIZE;
             tokens = realloc(tokens, bufsize * sizeof(char *));
             if (!tokens) {
-                fprintf(stderr, "Reallocation error in split_line: tokens\n");
+                perror("realloc failed");
                 exit(EXIT_FAILURE);
             }
         }
         token = strtok(NULL, TOK_DELIM);
     }
-    tokens[i] = NULL;
+    tokens[position] = NULL;
     return tokens;
 }
+
 
