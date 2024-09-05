@@ -8,21 +8,27 @@
 
 To run BhaiShell, follow these steps:
 
-1. **Compile the Project**
+## Getting Started
 
-   Use the following command from the root directory:
-
-   ```bash
-   gcc -o shell main.c src/shell.c src/builtin_func.c src/execute_args.c src/new_process.c src/read_line.c src/split_line.c -Iinclude
-   ```
-
-2. **Execute BhaiShell**
-
-   After compiling, run the shell executable:
+   1. **Clone the repository to your local machine**
 
    ```bash
-   ./shell
+   git clone https://github.com/shoibk897/C.git
    ```
+   
+   2. **Navigate to the project directory**
+
+   ```bash
+   cd bhaiShell
+   ```
+   
+   3. **Compile and run the project**
+
+   ```bash
+    ./runShell.sh
+   ```
+
+
 
 ## Commands
 
