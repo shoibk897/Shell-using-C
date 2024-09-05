@@ -7,7 +7,7 @@
 #include <string.h>
 #include <sys/wait.h>
 
-#define TOK_DELIM " \t\r\n\a"
+#define TOK_DELIM " \t\n"
 #define INITIAL_TOKENS_SIZE 64
 
 extern char **environ;
