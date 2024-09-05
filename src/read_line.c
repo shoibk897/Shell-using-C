@@ -1,7 +1,7 @@
 #include "shell.h"
 
-char *read_line(void)
-{
+char *read_line(void){
+
     char *line = NULL; // Pointer to store the line read from stdin
     size_t bufsize = 0;   
 

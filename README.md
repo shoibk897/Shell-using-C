@@ -10,7 +10,6 @@ To run BhaiShell, follow these steps:
 
 ## Getting Started
 
-
    1. **Clone the repository to your local machine**
 
    ```bash

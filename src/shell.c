@@ -1,7 +1,7 @@
 #include "shell.h"
 
-void shell(void)
-{
+void shell(void){
+ 
     char *line;      // Buffer to hold the user input line
     char **args;     // Array of arguments parsed from the input line
     int status = -1; // Status of the command execution; -1 to continue looping

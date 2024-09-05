@@ -5,3 +5,4 @@ gcc -o shell main.c -I./include -L. ./Lib/BhaiShellLib.a
 
 # Run the shell
 ./shell
+
