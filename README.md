@@ -18,11 +18,11 @@ To run BhaiShell:
 
 2. **Commands**
     BhaiShell supports the following built-in commands:
-    ### cd [directory]: Changes the current working directory to the specified directory.
-    ### env: Prints out the environment variables.
-    ### help: Lists all available built-in commands.
-    ### exit [status]: Exits the shell with the specified exit status. If no status is provided, it exits with status 0.
-    ### version: Displays the shell name, version, username, and an ASCII art.
+    • cd [directory]: Changes the current working directory to the specified directory.
+    • env: Prints out the environment variables.
+    • help: Lists all available built-in commands.
+    • exit [status]: Exits the shell with the specified exit status. If no status is provided, it exits with status 0.
+    • version: Displays the shell name, version, username, and an ASCII art.
 
 Key Features
 Process Management: Utilizes fork and exec system calls to manage child processes for executing commands.
