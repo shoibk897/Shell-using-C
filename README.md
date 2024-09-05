@@ -42,13 +42,3 @@ Contributions are welcome! If you have suggestions, improvements, or bug fixes, 
 - Provide a description of the changes or additions.
 
 Thank you for your interest in BhaiShell!
-```
-
-I made sure to include:
-
-- Corrected the command block syntax.
-- Added a section for executing the compiled shell.
-- Clarified the key features section.
-- Improved readability and consistency throughout the document.
-
-Let me know if there's anything else you'd like to adjust!
