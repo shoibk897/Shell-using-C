@@ -3,7 +3,7 @@
 char *read_line(void)
 {
     char *line = NULL; // Pointer to store the line read from stdin
-    int bufsize = 0;   
+    size_t bufsize = 0;   
 
     // Read a line from stdin
     if (getline(&line, &bufsize, stdin) == -1)
