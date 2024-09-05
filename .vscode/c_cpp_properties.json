@@ -5,9 +5,6 @@
             "includePath": [
                 "${workspaceFolder}/include",
                 "${workspaceFolder}/src",
-                "${workspaceFolder}/app",
-                "C:/MinGW/include",
-                "C:/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include"
             ],
             "defines": [
                 "_DEBUG",

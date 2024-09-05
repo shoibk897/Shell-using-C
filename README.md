@@ -10,6 +10,8 @@ To run BhaiShell, follow these steps:
 
 ## Getting Started
 
+    **
+
    1. **Clone the repository to your local machine**
 
    ```bash
@@ -27,7 +29,41 @@ To run BhaiShell, follow these steps:
    ```bash
     ./runShell.sh
    ```
+Here's how you can include instructions in your `README.md` file for users to configure their VS Code `c_cpp_properties.json` to recognize all necessary file paths for your project:
 
+---
+
+## VS Code Configuration
+
+To ensure that VS Code can recognize all the necessary file paths for this shell project, you need to update the `c_cpp_properties.json` file in the `.vscode` directory. This allows VS Code to know where to look for header files and source code.
+
+### Steps to configure:
+
+1. Open VS Code.
+2. If you don't have a `.vscode` folder in your project, create one.
+3. Inside `.vscode`, create or open the `c_cpp_properties.json` file.
+4. Add or update the following paths under `"includePath"`:
+
+```json
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/src",
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}
+```
+This configuration tells VS Code to look for headers in the `include`, `src`, and `app` directories within your project.
 
 
 ## Commands
