@@ -2,13 +2,13 @@
 
 ## Overview
 
-**BhaiShell** is a custom shell implementation written in C. It provides a command-line interface where users can execute built-in commands and manage processes. This project demonstrates basic shell functionalities and process handling in C.
+**BhaiShell** is a custom shell implementation written in C. It provides a command-line interface where users can execute built-in commands. This project demonstrates basic shell functionalities and process handling in C.
 
 ## Running
 
 To run BhaiShell, follow these steps:
 
-## Getting Started
+### Getting Started
 
    1. **Clone the repository to your local machine**
 
@@ -21,8 +21,13 @@ To run BhaiShell, follow these steps:
    ```bash
    cd bhaiShell
    ```
+   3. **Give permision to script file**
+
+   ```bash
+    chmod +rwx runShell.sh
+   ```
    
-   3. **Compile and run the project**
+   4. **Compile and run the project**
 
    ```bash
     ./runShell.sh
